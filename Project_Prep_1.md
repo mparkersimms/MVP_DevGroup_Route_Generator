@@ -6,7 +6,7 @@ by  MVP DevGroup
     Nicki Baldwin
     Ted Knecht
     Irwin Marin
-
+  
 ## Conflict Plan
 
 1. What is the group process to resolve conflict, when it arises?
