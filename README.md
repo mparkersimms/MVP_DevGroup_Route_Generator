@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 301FinalProject
 
 
@@ -8,7 +8,7 @@
 ![Wireframe2](assets/Homepage.png)
 ![Wireframe3](assets/Results.png)
 ![Wireframe4](assets/AboutUs.png)
-=======
+
 # Route Generator:
 
 ## User Stories:
@@ -55,4 +55,4 @@
   -	Add multiple links to different parts of the website for easy navigation.
   -	Have a consistent theme from page to page.
 (Small to Medium Goal)
->>>>>>> 5fee3fb9761475649358c80bab63aed3c2dd6db7
+
