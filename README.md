@@ -8,6 +8,7 @@
 ![Wireframe2](assets/Homepage.png)
 ![Wireframe3](assets/Results.png)
 ![Wireframe4](assets/AboutUs.png)
+![Domain Model](assets/DomainModel.png)
 
 # Route Generator:
 
