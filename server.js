@@ -42,7 +42,8 @@ app.use(methodOverride('_method'));
 // ================== Routes. ==========================
 
 app.get('/', showHome);
-app.get('/search', getSearchData)
+app.get('/search', getSearchData);
+app.get('/results', showResults)
 
 // ----- global arrays----------
 
@@ -62,6 +63,10 @@ function getSearchData(req, res){
         .then(results=>{
             console.log(results.body);
         })
+}
+function showResults(req,res){
+    console.log('results!');
+    res.render('./pages/results');
 }
 // ================== Initialization====================
 
