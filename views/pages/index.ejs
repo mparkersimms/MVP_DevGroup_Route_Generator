@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./../layout/head') %>
+<body>
+    <%- include('./../layout/header') %>
+    <h1>Home Page</h1>
+    <img src="http://via.placeholder.com/400" alt="">
+    <section id="one">
+    <Form>
+        <input type="text" name="departure" id="departure" value="Enter a Departure Location">
+        <input type="text" name="arrival" id="arrival" value="Enter an Arrival Location">
+        <select name="categories">
+            <option>Select a Category</option>
+            <option id="breweries">Breweries</option>
+            <option id="boutique_hotels">Boutique Hotels</option>
+            <option id="museums">Museums</option>
+            <option id="comic_book_shops">Comic Book Shops</option>
+        </select>
+    </Form>
+</section>
+</body>
+</html>
+
+<%- include('./../layout/footer') %>

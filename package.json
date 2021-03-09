@@ -1,0 +1,30 @@
+{
+  "name": "mvp_devgroup_route_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mparkersimms/MVP_DevGroup_Route_Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mparkersimms/MVP_DevGroup_Route_Generator/issues"
+  },
+  "homepage": "https://github.com/mparkersimms/MVP_DevGroup_Route_Generator#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "pg": "^8.5.1",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {}
+}
