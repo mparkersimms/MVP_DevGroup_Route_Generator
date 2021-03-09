@@ -38,4 +38,9 @@
 - user is presented with directions and a map graphic with proposed route
 
 # Data Flow
-- 
+- User starts in the home page.  They will have two location inputs, a starting point and an ending address.  They will be able to select from a category of interests dropdown menu.  
+- Once the inputs are selected, the app will communicate with the Google Maps API.
+- The API will return a route that will be populated in the results page.  
+- The results page will also include results within a given range of that route. (I.e. a 50 mile radius)
+- The user can then select any number of those and recalculate the route.  
+- The user is given the option to save the route data to the database for use at a later time.
