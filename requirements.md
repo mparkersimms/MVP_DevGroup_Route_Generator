@@ -15,7 +15,7 @@
   - Display the route on a map graphic
   - recommend certain stops along the way based upon users preferences
   - remove presented options if not desired
-  - save route itenerary
+  - save route itinerary
 
 ## OUT
   - Will not allow users to submit their own locations
@@ -23,14 +23,14 @@
 
 # MVP
 - Displays route information on a map
-- Recommends location to vist at destination
+- Recommends location to visit at destination
 - Select one of two interest catagories to affect 'recommended locations' list within a set distance of route
 
 ## Stretch
-  - Select multiple interest catagories and recieve composite results
+  - Select multiple interest catagories and receive composite results
   - Recalculate route based on selected locations from recommended list
   - Allow user to remove undesired locations
-  - Allow user to save trip itenerary
+  - Allow user to save trip itinerary
   
 # Functional Requirments
 - user sets start location and destination
@@ -44,3 +44,13 @@
 - The results page will also include results within a given range of that route. (I.e. a 50 mile radius)
 - The user can then select any number of those and recalculate the route.  
 - The user is given the option to save the route data to the database for use at a later time.
+
+## Non-functional Requirements;
+
+### **Scalability**
+
+  Scalability will be added to our application in the following ways.  Our app will be designed to populate locations that correspond with a selected category from the home page.  That category will come from a dropdown menu.  Which allows us to limit how many categories the user can select at a given time.  The Google Maps API is completely open ended and will allow a keyword to be used as a search query.  We are intentionally limiting the options in order to scale the app to the appropriate size.  
+
+### **Testability**
+
+  Our app will be designed to be tested at multiple levels to ensure operational status.  Starting with the user's ability to add a location, we are going to make sure the input fields only accept appropriate inputs. The Google Maps API will need to be tested to make sure it renders an appropriately sized viewport.  Data that is collected during one search query will be saved to the database and re-populated in a recent-searches page.  The information must stay intact during the data transfer between the server, database, and the client.  
