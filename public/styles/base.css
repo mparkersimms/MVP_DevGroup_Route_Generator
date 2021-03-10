@@ -1,7 +1,8 @@
+@media(max-width: 500px){
 body {
     display: flex;
     flex-direction: column;
-    background-color: #777c88;
+    background-color: #480CA8;
     color: rgb(45, 46, 48);
     text-shadow: rgb(31, 31, 31);
     min-width: 480px;
@@ -10,31 +11,37 @@ body {
 }
 header {
     display: flex;
-    background-color: #494d55;
-    color:rgb(255, 251, 251);
+    background-image: linear-gradient(#B5179E, #480CA8);
+    background-color: #B5179E;
+    color: #00F5d4;
     width: 100%;
     margin:auto;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #00F5d4;
     /* height:100px; */
 }
-
 header svg {
     margin-left: auto;
     align-self: center;
-    margin-right: 20px;
+    margin-right: auto;
 }
-
 h1 {
-    font-size: 50pt;
+    font-size: 30pt;
     margin: auto;
 }
 img {
-    margin:auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 97%;
 }
 #one {
     display: flex;
     flex-direction: column;
-    border: thick solid rgb(49, 53, 58);
-    background-color: #616a7b;
+    border: none;
+    background-color: #480CA8;
     width: 95%;
     height: 600px;
     margin:auto;
@@ -48,4 +55,6 @@ img {
 #one form input,#one form select{
     height: 50px;
     font-size: 25pt;
+    margin-top: 10pt;
+}
 }
