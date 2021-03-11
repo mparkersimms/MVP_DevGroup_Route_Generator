@@ -91,14 +91,18 @@
         margin-left: auto;
         margin-right: auto;
         width: 97%;
+
     }
+
     #one {
         display: flex;
         flex-direction: column;
+
         border: thick rgb(93, 150, 181) solid;
         background-color: rgb(242, 242, 242, 0.7);
         width: 50%;
         /* height: 250px; */
+
         margin: auto;
         border-radius: 5px;
         padding: 15px;
