@@ -2,28 +2,43 @@
 <html lang="en">
 
 <%- include('./../layout/head') %>
-
+<script src="./../../server.js"></script>
     <body>
         <%- include('./../layout/header') %>
             <!-- <h1>Home Page</h1> -->
-            <img id='map-placeholder'>
-            <section id="one">
+
+            <!-- <img id='map-placeholder' src="https://miro.medium.com/max/2400/1*qYUvh-EtES8dtgKiBRiLsA.png" alt=""> -->
+            <div id="five">
+
+           <section id="one">
+
                 <a id="search-link" href="/results">Go to Search Page</a>
-                <Form action="/search">
-                    <input type="text" name="departure" id="departure" value="Enter a Departure Location">
-                    <input type="text" name="arrival" id="arrival" value="Enter an Arrival Location">
-                    <select name="categories">
-            <option>Select a Category</option>
-            <option id="breweries">Breweries</option>
-            <option id="bed_and_breakfast">Boutique Hotels</option>
-            <option id="museums">Museums</option>
-            <option id="comics">Comic Book Shops</option>
-            <input type="submit">
-        </select>
-                </Form>
-            </section>
+                <form action="/search">
+                    <input type="text" name="origin" id="origin" value="Enter a Departure Location">
+                    <input type="text" name="desination" id="desination" value="Enter an Arrival Location">
+                    <select name="category">
+                        <option>Select a Category</option>
+                        <option id="breweries">Breweries</option>
+                        <option id="bed_and_breakfast">Boutique Hotels</option>
+                        <option id="museums">Museums</option>
+                        <option id="comics">Comic Book Shops</option>
+                    </select>
+                    <input type="submit">
+
+                    </form>
+                    <p>---- or ----</p>
+                    <form action="/savedRoute">
+                    <select id="saved1" name="saved">
+                        <option>Select a Saved Route (Optional)</option>
+                        <% data.forEach(val => {%>
+                            <option value="<%= val.id%>" ><%= val.origin%> to <%= val.desination%> - <%= val.category%> </option>
+                        <% }); %>
+                        <input type="submit">
+                    </select>
+                </form>
+            </section> 
+        </div>
+            <%- include('./../layout/footer') %>
     </body>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </html>
-
-<%- include('./../layout/footer') %>

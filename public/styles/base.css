@@ -97,19 +97,27 @@
     #one {
         display: flex;
         flex-direction: column;
-        border: none;
-        background-color: #F2F2F2;
-        width: 100%;
-        height: 600px;
-        background-image: url('https://snz04pap001files.storage.live.com/y4mXNSxkd6bb4S-xEoug9A6kx_CZ9bxCr1VEHilz6VjlGjuvGwidyMv8L32xQz4l_9g6qVSpqTQ4TXv7NDqU1g6kcd0JyVmzZtFRo5IxOLAvrFVluvz3DD6aD9G9AKXGTzXgnUEVi2SGK82ul8QtCdf-wudkxDGP78Hap4k4NJRiEsNXpraaY-NvYkaxpH3roQX?width=1176&height=645&cropmode=none');        
+
+        border: thick rgb(93, 150, 181) solid;
+        background-color: rgb(242, 242, 242, 0.7);
+        width: 50%;
+        /* height: 250px; */
+
         margin: auto;
         border-radius: 5px;
+        padding: 15px;
     }
     #one form {
         display: flex;
         flex-direction: column;
         width: 95%;
         align-self: center;
+    }
+    #one p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: larger;
+        font-weight: bold;
     }
     #search-link {
         text-align: center;
@@ -121,6 +129,14 @@
         height: 30px;
         font-size: 15pt;
         margin-top: 10pt;
+    }
+    #five {
+        display:flex;
+        align-items: center;
+        width:100%;
+        height: 600px;
+        background-image: url('https://miro.medium.com/max/2400/1*qYUvh-EtES8dtgKiBRiLsA.png');
+
     }
     #submit-button {
         background-color: #CCE7F5;
