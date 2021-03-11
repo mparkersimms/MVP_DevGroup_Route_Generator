@@ -12,7 +12,7 @@
     header {
         display: flex;
         /* background-image: linear-gradient(#B5179E, #480CA8); */
-        background-color: #F2F2F2;
+        background-image: linear-gradient(#CCE7F5, #F2F2F2);
         color: #264653;
         width: 100%;
         margin: auto;
@@ -23,8 +23,8 @@
         /* height:100px; */
     }
     #logo {
-        height: 125px;
-        width: 225px;
+        height: 225px;
+        width: 325px;
         margin-top: 30px;
         margin-bottom: 30px;
         padding-left: 50px;
@@ -72,6 +72,10 @@
         flex-direction: column;
         width: 95%;
         align-self: center;
+    }
+    #search-link {
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     #one form input,
     #one form select {
@@ -137,7 +141,7 @@
         border: none;
         background-color: #F2F2F2;
         width: 95%;
-        height: 600px;
+        height: 350px;
         margin: auto;
     }
     #one form {
@@ -151,5 +155,11 @@
         height: 50px;
         font-size: 25pt;
         margin-top: 10pt;
+    }
+    footer {
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
     }
 }
