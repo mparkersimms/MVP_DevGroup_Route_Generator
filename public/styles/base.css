@@ -1,3 +1,38 @@
+#map {
+    height:400px;
+}
+
+#list {
+    display:flex;
+    flex-direction: column;
+    /* height:400px; */
+    /* flex-wrap: wrap; */
+}
+#list ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+#list ul section {
+    align-self: center;
+    border: thin solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 28%;
+}
+#heading {
+    display:flex;
+}
+#heading a {
+    text-decoration: none;
+    color: #264653;
+}
+#heading a h2 {    
+    border:thin solid black;
+    background-color: rgb(95, 108, 120, 0.3);
+    padding: 5px;
+
+}
 @media(min-width: 501px) {
     body {
         display: flex;

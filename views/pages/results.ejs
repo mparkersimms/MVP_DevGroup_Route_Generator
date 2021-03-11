@@ -4,41 +4,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Route Generator</title>
+        <title>Roadtrip Planner</title>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <link rel="stylesheet" href="./../styles/reset.css">
+        <!-- <link rel="stylesheet" href="./../styles/reset.css"> -->
         <link rel="stylesheet" href="./../styles/base.css">
         <link rel="stylesheet" href="./../styles/layout.css">
         <link rel="stylesheet" href="./../styles/modules.css">
         <script src="./../../app.js"></script>
     </head>
-<!-- <%- include('./../layout/head') %> -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Route Generator</title>
-    <link rel="stylesheet" href="./../styles/base.css">
-</head>
-<%- include('./../layout/head') %>
 
 <body>
     <%- include('./../layout/header') %>
-    <h1>show page</h1>
-    <!-- <div id="iframe"> -->
-        <!-- <img 
-        src="http://maps.googleapis.com/maps/api/staticmap?center=40.714%2c%20-73.998&zoom=12&size=400x400&key=AIzaSyDdTPIF2s6VBSq4Th_2iSjcMTl6gRYIixY"
-          > -->
-          <!-- <iframe
-          width="600"
-          height="450"
-          style="border:0"
-          loading="lazy"
-          allowfullscreen
-          src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDdTPIF2s6VBSq4Th_2iSjcMTl6gRYIixY&origin=manhattan,ks&destination=seattle,wa&waypoints=minot,ND|portland,or">
-        </iframe> -->
-        
-    <!-- </div> -->
+    <div id="heading">
+        <h1>Your Route</h1>
+        <a href="/save"><h2 id="savebutton">Save Route</h2></a>
+    </div>
     <div id="map"></div>
     <div id="list">
         <ul></ul>
