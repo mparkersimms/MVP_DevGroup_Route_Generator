@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Route Generator</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="./../styles/reset.css">
+        <link rel="stylesheet" href="./../styles/base.css">
+        <link rel="stylesheet" href="./../styles/layout.css">
+        <link rel="stylesheet" href="./../styles/modules.css">
+        <script src="./../../app.js"></script>
+    </head>
+<!-- <%- include('./../layout/head') %> -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +21,34 @@
     <link rel="stylesheet" href="./../styles/base.css">
 </head>
 <%- include('./../layout/head') %>
+
 <body>
     <%- include('./../layout/header') %>
     <h1>show page</h1>
-    <div></div>
+    <!-- <div id="iframe"> -->
+        <!-- <img 
+        src="http://maps.googleapis.com/maps/api/staticmap?center=40.714%2c%20-73.998&zoom=12&size=400x400&key=AIzaSyDdTPIF2s6VBSq4Th_2iSjcMTl6gRYIixY"
+          > -->
+          <!-- <iframe
+          width="600"
+          height="450"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDdTPIF2s6VBSq4Th_2iSjcMTl6gRYIixY&origin=manhattan,ks&destination=seattle,wa&waypoints=minot,ND|portland,or">
+        </iframe> -->
+        
+    <!-- </div> -->
+    <div id="map"></div>
+    <div id="list">
+        <ul></ul>
+    </div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-dTRvv8zLeknO1PlTo27lXeWbC3JxCg4&callback=initMap&libraries=places&v=weekly"
+    async
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
     <%- include('./../layout/footer') %>
 </body>
 </html>
