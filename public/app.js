@@ -37,7 +37,7 @@ function initMap() {
             service.nearbySearch({
                 location: { lat: stuffThatComesBack[0][i][0], lng: stuffThatComesBack[0][i][1] },
                 radius: '30000',
-                keyword: [stuffThatComesBack[1].categories]
+                keyword: [stuffThatComesBack[1].category]
             }, callback);
         }
         function callback(results, status) {
@@ -69,10 +69,10 @@ function calculateAndDisplayRoute(directionsService, directionsRenderer) {
         directionsService.route(
             {
                 origin: {
-                    query: locationData[0].departure,
+                    query: locationData[0].origin,
                 },
                 destination: {
-                    query: locationData[0].arrival,
+                    query: locationData[0].desination,
                 },
                 travelMode: google.maps.TravelMode.DRIVING,
             },

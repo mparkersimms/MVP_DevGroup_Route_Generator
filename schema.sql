@@ -4,6 +4,9 @@ DROP TABLE IF EXISTS trip;
 
 CREATE TABLE trip (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255)
+    origin VARCHAR(255),
+    desination VARCHAR(255),
+    category VARCHAR(255),
+    waypoints TEXT
         
 );
