@@ -2,16 +2,17 @@
 <html lang="en">
 
 <%- include('./../layout/head') %>
-<body>
-    <%- include('./../layout/header') %>
-    <!-- <h1>Home Page</h1> -->
-    <img src="https://miro.medium.com/max/2400/1*qYUvh-EtES8dtgKiBRiLsA.png" alt="">
-    <section id="one">
-        <a href="/results">Go to Search Page</a>
-    <Form action= "/search">
-        <input type="text" name="departure" id="departure" value="Enter a Departure Location">
-        <input type="text" name="arrival" id="arrival" value="Enter an Arrival Location">
-        <select name="categories">
+
+    <body>
+        <%- include('./../layout/header') %>
+            <!-- <h1>Home Page</h1> -->
+            <img id='map-placeholder' src="https://miro.medium.com/max/2400/1*qYUvh-EtES8dtgKiBRiLsA.png" alt="">
+            <section id="one">
+                <a href="/results">Go to Search Page</a>
+                <Form action="/search">
+                    <input type="text" name="departure" id="departure" value="Enter a Departure Location">
+                    <input type="text" name="arrival" id="arrival" value="Enter an Arrival Location">
+                    <select name="categories">
             <option>Select a Category</option>
             <option id="breweries">Breweries</option>
             <option id="bed_and_breakfast">Boutique Hotels</option>
@@ -19,9 +20,10 @@
             <option id="comics">Comic Book Shops</option>
             <input type="submit">
         </select>
-    </Form>
-</section>
-</body>
+                </Form>
+            </section>
+    </body>
+
 </html>
 
 <%- include('./../layout/footer') %>
