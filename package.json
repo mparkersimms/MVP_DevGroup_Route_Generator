@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/mparkersimms/MVP_DevGroup_Route_Generator#readme",
   "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.1.16",
+    "@googlemaps/js-api-loader": "^1.11.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "google-maps-api-loader": "^1.1.1",
+    "google-polyline": "^1.0.3",
     "method-override": "^3.0.0",
     "pg": "^8.5.1",
     "superagent": "^6.1.0"

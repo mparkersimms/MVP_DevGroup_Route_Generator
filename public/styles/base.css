@@ -49,3 +49,8 @@ img {
     height: 50px;
     font-size: 25pt;
 }
+
+#map {
+    width: 100%;
+    height: 400px;
+}
