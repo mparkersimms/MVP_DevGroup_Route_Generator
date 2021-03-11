@@ -1,56 +1,165 @@
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: #777c88;
-    color: rgb(45, 46, 48);
-    text-shadow: rgb(31, 31, 31);
-    min-width: 480px;
-    max-width:760px;
-    margin: auto;
+@media(min-width: 501px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        color: #264653;
+        text-shadow: #287271;
+        min-width: 501px;
+        max-width: 1080px;
+        margin: auto;
+    }
+    header {
+        display: flex;
+        /* background-image: linear-gradient(#B5179E, #480CA8); */
+        background-image: linear-gradient(#CCE7F5, #F2F2F2);
+        color: #264653;
+        width: 100%;
+        margin: auto;
+        /* font-family: 'Mulish', sans-serif; */
+        /* font-family: 'Playfair Display', serif;
+        font-weight: bolder;
+        text-shadow: 1px 1px 2px #264653; */
+        /* height:100px; */
+    }
+    #logo {
+        height: 225px;
+        width: 325px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 50px;
+    }
+    #nav {
+        background-color: white;
+        display: none;
+        width: 25%;
+    }
+    #nav a {
+        margin: auto;
+        display: block;
+    }
+    header svg {
+        /* display: none; */
+        margin-left: auto;
+        align-self: center;
+        margin-right: auto;
+    }
+    .show {
+        display: block;
+    }
+    h1 {
+        font-size: 30pt;
+        margin: auto;
+    }
+    img {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 97%;
+    }
+    #one {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        background-color: #F2F2F2;
+        width: 50%;
+        height: 250px;
+        margin: auto;
+        border-radius: 5px;
+    }
+    #one form {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        align-self: center;
+    }
+    #search-link {
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    #one form input,
+    #one form select {
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 30px;
+        font-size: 15pt;
+        margin-top: 10pt;
+    }
+    #submit-button {
+        background-color: #CCE7F5;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+    }
+    footer {
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
 }
-header {
-    display: flex;
-    background-color: #494d55;
-    color:rgb(255, 251, 251);
-    width: 100%;
-    margin:auto;
-    /* height:100px; */
-}
-
-header svg {
-    margin-left: auto;
-    align-self: center;
-    margin-right: 20px;
-}
-
-h1 {
-    font-size: 50pt;
-    margin: auto;
-}
-img {
-    margin:auto;
-}
-#one {
-    display: flex;
-    flex-direction: column;
-    border: thick solid rgb(49, 53, 58);
-    background-color: #616a7b;
-    width: 95%;
-    height: 600px;
-    margin:auto;
-}
-#one form {
-    display:flex;
-    flex-direction: column;
-    width:95%;
-    align-self: center;
-}
-#one form input,#one form select{
-    height: 50px;
-    font-size: 25pt;
-}
-
-#map {
-    width: 100%;
-    height: 400px;
+@media(max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        color: rgb(45, 46, 48);
+        text-shadow: rgb(31, 31, 31);
+        min-width: 480px;
+        max-width: 760px;
+        margin: auto;
+    }
+    header {
+        display: flex;
+        background-image: linear-gradient(#CCE7F5, #F2F2F2);
+        background-color: #F2F2F2;
+        color: #00F5D4;
+        width: 100%;
+        margin: auto;
+        /* font-family: 'Mulish', sans-serif;
+        font-weight: bolder; */
+        /* height:100px; */
+    }
+    header svg {
+        margin-left: auto;
+        align-self: center;
+        margin-right: auto;
+    }
+    h1 {
+        font-size: 30pt;
+        margin: auto;
+    }
+    img {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        width: 97%;
+    }
+    #one {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        background-color: #F2F2F2;
+        width: 95%;
+        height: 350px;
+        margin: auto;
+    }
+    #one form {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        align-self: center;
+    }
+    #one form input,
+    #one form select {
+        height: 50px;
+        font-size: 25pt;
+        margin-top: 10pt;
+    }
+    footer {
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
 }
