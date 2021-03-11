@@ -54,6 +54,8 @@ app.get('/search', getSearchData);
 app.get('/results', showResults);
 app.get('/route', popRoute);
 app.get('/locations', sendLocations);
+app.get('/save', saveToDb);
+
 // ----- global arrays----------
 // -------app calls -------------
 // -------functions--------------
@@ -103,6 +105,10 @@ function popRoute(req,res){
 function sendLocations(req,res){
     res.send(routeData);
 }
+function saveToDb(req,res){
+    console.log('trying to save');
+    console.log(routeData);
+}
 //  --------this is example data that works -------------
 googleClient
     .elevation({
@@ -118,21 +124,7 @@ googleClient
     .catch((e) => {
         console.log(e.response.data.error_message);
     });
-
-// googleClient
-//     .Map({
-//         params: {
-//             key: "AIzaSyC-dTRvv8zLeknO1PlTo27lXeWbC3JxCg4",
-//             callback: initMap(),
-//         }
-//     })
-//     .then((r) => {
-//         console.log("this is map data", r.data.results[0]);
-//     })
-//     .catch((e) => {
-//         console.log(e.response.data.error_message);
-//     });
-// console.log(Loader);
+   
 
 // ================== Initialization====================
 

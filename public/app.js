@@ -52,9 +52,10 @@ function initMap() {
                             map,
                             title: "Hello World!"
                         });
-                        $('#list ul').append(`<li>${results[i].name}</li>`);
-                        $('#list ul').append(`<li>${results[i].vicinity}</li>`);
-                        $('#list ul').append(`<li>${results[i].photos[0].html_attributions[0]}</li>`);
+                        $('#list ul').append(`<section></section>`);
+                        $('#list ul section:last-child').append(`<li>${results[i].name}</li>`);
+                        $('#list ul section:last-child').append(`<li>${results[i].vicinity}</li>`);
+                        $('#list ul section:last-child').append(`<li>${results[i].photos[0].html_attributions[0]}</li>`);
                     }
                 }
             }
