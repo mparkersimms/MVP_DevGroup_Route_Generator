@@ -1,5 +1,5 @@
 function initMap() {
-    $.ajax('http://localhost:3004/route').then(stuffThatComesBack => {
+    $.ajax('/route').then(stuffThatComesBack => {
 
         const directionsService = new google.maps.DirectionsService();
         const directionsRenderer = new google.maps.DirectionsRenderer();
@@ -56,7 +56,7 @@ function initMap() {
 }
 
 function calculateAndDisplayRoute(directionsService, directionsRenderer) {
-    $.ajax('http://localhost:3004/locations').then(locationData => {
+    $.ajax('/locations').then(locationData => {
 
         directionsService.route(
             {
