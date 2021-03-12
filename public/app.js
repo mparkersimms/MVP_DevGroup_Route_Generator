@@ -1,6 +1,6 @@
 function initMap() {
     $.ajax('http://localhost:3004/route').then(stuffThatComesBack => {
-        console.log(stuffThatComesBack);
+
         const directionsService = new google.maps.DirectionsService();
         const directionsRenderer = new google.maps.DirectionsRenderer();
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -12,8 +12,7 @@ function initMap() {
 
         calculateAndDisplayRoute(directionsService, directionsRenderer);
 
-        // document.getElementById("button").addEventListener("click", onChangeHandler);
-        // document.getElementById("end").addEventListener("change", onChangeHandler);
+
         const polyCoords = polyPoints(stuffThatComesBack[0]);
         const polyBound = new google.maps.Polygon({
             paths: polyCoords,
@@ -23,17 +22,12 @@ function initMap() {
             fillColor: "#FF0000",
             fillOpacity: 0.35,
         });
-        //to hide polygon set strokeOpacity and fillColor = 0
-        // polyBound.setMap(map);
-        console.log(polyBound);
-        console.log("this is the stuff that comes back", stuffThatComesBack[0]);
         polyBound.setMap(map);
 
         const service = new google.maps.places.PlacesService(map);
 
         for (let i = 0; i < stuffThatComesBack[0].length; i += 30) {
-            // console.log(stuffThatComesBack[0][i]);
-            console.log(i, "starting over");
+
             service.nearbySearch({
                 location: { lat: stuffThatComesBack[0][i][0], lng: stuffThatComesBack[0][i][1] },
                 radius: '30000',
@@ -45,8 +39,6 @@ function initMap() {
                 for (var i = 0; i < results.length; i++) {
                     console.log(i);
                     if (google.maps.geometry.poly.containsLocation(results[i].geometry.location, polyBound) == true) {
-                        
-                        console.log(results[i]);
                         new google.maps.Marker({
                             position: results[i].geometry.location,
                             map,
@@ -127,7 +119,3 @@ function displayNavBar(){
     $('#nav').toggle();
 }
 
-// function CreateList(obj) {
-//     this.name = obj.name;
-//     this.address = obj.vicinity
-// }
