@@ -120,6 +120,13 @@ function polyPoints(arr) {
     return fullPoly;
 }
 
+
+$('svg').on('click', displayNavBar);
+
+function displayNavBar(){
+    $('#nav').toggle();
+}
+
 // function CreateList(obj) {
 //     this.name = obj.name;
 //     this.address = obj.vicinity

@@ -33,6 +33,28 @@
     padding: 5px;
 
 }
+.theTeam{
+    height:200px;
+    display:flex;
+    margin: 10px;
+    border:thin #264653 solid;
+    padding:3px;
+    border-radius: 3px;
+}
+.theTeam img{
+    width:25%;
+    /* margin:none; */
+    border-radius: 3px;
+}
+.theTeam div {
+    padding:10px;
+    overflow-y: scroll;
+}
+.theTeam h2 {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
 @media(min-width: 501px) {
     body {
         display: flex;
@@ -46,6 +68,7 @@
     }
     header {
         display: flex;
+        flex-direction: column;
         /* background-image: linear-gradient(#B5179E, #480CA8); */
         background-image: linear-gradient(#CCE7F5, #F2F2F2);
         color: #264653;
@@ -58,40 +81,53 @@
         /* height:100px; */
     }
     #logo {
+        align-self: center;
         height: 225px;
         width: 325px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-left: 50px;
+        /* margin-top: 30px;
+        margin-bottom: 30px; */
+        margin:auto;
+        /* padding-left: 50px; */
+    
     }
     #nav {
-        background-color: white;
-        display: none;
-        width: 25%;
+        display: flex;
+        flex-direction: row;
+        background-color:none;
+        display: block;
+        text-align: center;
+        /* align-content: center; */
+        /* align-content: space-between; */
+       
     }
     #nav a {
-        margin: auto;
-        display: block;
+        margin: 0 5px;
+        display: inline-block;
+        text-decoration: none;
+        color: #264653;
+        font-weight: bold;
+        font-size: 15pt;
+        border: thin #264653 solid;
+        padding:5px;
+        border-radius:3px;
     }
     header svg {
-        /* display: none; */
+        display: none;
         margin-left: auto;
         align-self: center;
         margin-right: auto;
     }
-    .show {
-        display: block;
-    }
+    
     h1 {
         font-size: 30pt;
         margin: auto;
     }
-    img {
+    /* img {
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         width: 97%;
-    }
+    } */
     #one {
         display: flex;
         flex-direction: column;

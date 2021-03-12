@@ -56,7 +56,7 @@ app.get('/route', popRoute);
 app.get('/locations', sendLocations);
 app.get('/save', saveToDb);
 app.get('/savedRoute',popSavedRoute);
-
+app.get('/about', renderAboutUs);
 // ----- global arrays----------
 // -------app calls -------------
 // -------functions--------------
@@ -154,7 +154,9 @@ function popSavedRoute(req,res){
         });
 
 }
-
+function renderAboutUs(req,res){
+    res.render('./pages/about')
+}
 //  --------this is example data that works -------------
 // googleClient
 //     .elevation({
