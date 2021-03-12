@@ -62,11 +62,10 @@ let routeData = [];
 
 
 function showHome(req, res) {
-    console.log('you made it home!');
     const SqlString = 'SELECT * FROM trip';
     const SqlArray = [];
     client.query(SqlString, SqlArray)
-        .then(data => {            
+        .then(data => {
             const ejsObject = { data: data.rows };
             res.render('./pages/index', ejsObject);
         });

@@ -2,16 +2,17 @@
 <html lang="en">
 
 <%- include('./../layout/head') %>
-
+    <style>
+        #nav #savebutton {display:none;}
+        #nav a:nth-child(2) {display: none;}
+    </style>
     <body>
         <%- include('./../layout/header') %>
-            <!-- <h1>Home Page</h1> -->
-
-            <!-- <img id='map-placeholder' src="https://miro.medium.com/max/2400/1*qYUvh-EtES8dtgKiBRiLsA.png" alt=""> -->
+            
             <div id="five">
 
            <section id="one">
-                <!-- <a id="search-link" href="/results">Go to Search Page</a> -->
+                
                 <form action="/search">
                     <input type="text" name="origin" id="origin" value="Enter a Departure Location">
                     <input type="text" name="desination" id="desination" value="Enter an Arrival Location">
