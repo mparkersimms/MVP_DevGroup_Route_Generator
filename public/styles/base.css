@@ -23,6 +23,9 @@
 #heading {
     display:flex;
 }
+#heading h1 {
+    padding-left: 127px;
+}
 #heading a {
     text-decoration: none;
     color: #264653;
