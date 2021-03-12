@@ -1,7 +1,6 @@
 
 # 301FinalProject
 
-
 ## Wireframes
 
 ![Wireframe1](assets/Mobileviews.png)
@@ -11,7 +10,28 @@
 ![Domain Model](assets/DomainModel.png)
 ![Database Tables](assets/Database.png)
 
-# Route Generator:
+# The Road Trip Planner:
+
+The MVP Dev Group's Road trip Planner allows users to find places to stop along the route.  The user will have the opportunity to chose a starting point and a destination then select places of interest from a dropdown menu.  The map will display the routes as well as any places of interest that are within a 10 mile radius of the route.  
+
+## To Run the App:
+
+To run the app, simply visit http://www.mvpdevgroupco.com/ where you will arrive at the home screen.  Enter the City and State corresponding to your departure and destinations then chose an interest from the drop down menu.  The user will then click the Submit button and be presented with the Google Maps directions and a list of businesses that match the search criteria from the drop-down menu.
+
+## Tools Used:
+
+The following tools were used to build and deploy this app:
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- jQuery
+- Google Maps JavaScrip API
+- Google Directions Service/Renderer
+- Google Places Library
+- Git and Github
+- Heroku
 
 ## User Stories:
 
